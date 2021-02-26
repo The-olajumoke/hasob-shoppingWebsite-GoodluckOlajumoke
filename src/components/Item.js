@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Row, Col } from "react-bootstrap";
+import {Col } from "react-bootstrap";
 import Star from "@material-ui/icons/Star";
 import Love from "@material-ui/icons/FavoriteBorder";
 import { useStateValue } from "./StateProvider";
@@ -17,6 +17,7 @@ const Item = ({
   shipping,
   rating,
   type,
+  quantity
 }) => {
   const [{ basket }, dispatch] = useStateValue();
 
@@ -34,6 +35,7 @@ const Item = ({
         shipping: shipping,
         rating: rating,
         type: type,
+        quantity:quantity
       },
     });
   };

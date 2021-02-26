@@ -1,7 +1,6 @@
 footer{
     background-color:blueviolet;
     height: auto;
-    /* display: flex; */
     justify-content: space-around;
     text-align: left;
     color: white;
@@ -31,7 +30,6 @@ footer{
 }
 .footer__mainCol{
     justify-content: space-around;
-        /* border: black 3px solid; */
     
 }
 .footer__contact{

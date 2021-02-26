@@ -1,5 +1,4 @@
 body{
-    background-color: grey;
 text-align: center;
 
 
@@ -74,7 +73,7 @@ input[type=checkbox]{
 .form__icon{
     display: flex;
     position: absolute;
-    left: 20px;
+    left: 30px;
     transform: scale(1.5);
 
 }
