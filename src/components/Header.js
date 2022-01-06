@@ -25,11 +25,10 @@ import { useState } from "react";
     <nav className="header">
       <div className="">
         <Link to="/">
-          <img
-            className="header__logo"
-            src="https://air-marketing-assets.imgix.net/blog/logo-db/shopify-logo/shopify-logo-svg-3.svg?auto=format&fit=max&ixlib=react-9.0.2&h=135&w=132"
-            alt=""
-          />
+          <h3 className="header__logo">
+            <span className="specA">A</span>
+            ntique
+          </h3>
         </Link>
       </div>
       <div className="header__search">
@@ -47,15 +46,15 @@ import { useState } from "react";
         <CancelIcon className="header__deleteIcon" />
       </div>
 
-      <div className="headerNav">
+      <div className="headerNav ">
         <Link to="/signup">
           <button className="header__button">Sign In</button>
         </Link>
-        <Link to="/cart">
+        <Link to="/cart" className="cartCount">
           {" "}
           <ShoppingCartIcon className="header__cart" />{" "}
+          <p className="cartCountnum">{basket?.length}</p>
         </Link>
-        <p>{basket?.length}</p>
         <Link to="/home">
           <img
             className="header__accImg border bg-primary"

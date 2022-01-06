@@ -18,18 +18,18 @@ function Cart() {
         <Header />
 
         {basket?.length === 0 ? (
-          <div className="py-5 h-50">
+          <div className="py-5 h-50 ">
             <h2 className="text-dark ">Your Cart is empty</h2>
           </div>
         ) : (
           <div className="my-5 cart__Section">
-            <div className="cart-heading">
+            {/* <div className="cart-heading">
               <span className="cart-header cart-item ">Item </span>
               <span className="cart-header ">Quantity</span>
               <span className="cart-header ">Unit Price</span>
               <span className="cart-header ">Sub Total</span>
-            </div>
-            <div className="cart_items">
+            </div> */}
+            <div className="cart_items border border-red">
               <div>
                 {basket.map((item) => (
                   <CheckoutProduct

@@ -21,9 +21,8 @@ function CheckoutProduct({ id, name, description, image, price, quantity }) {
   };
 
   return (
-    <div>
-      <div className="cart-row">
-        <div className="cart-header cart-item cart-column ">
+      <div className="border">
+        <div className=" ">
           <img className="cart-item-image" src={image} alt="" />
           <div className="cart-item-title">
             <h4>
@@ -37,10 +36,7 @@ function CheckoutProduct({ id, name, description, image, price, quantity }) {
                 Save Item{" "}
               </button>
 
-              <button className="cart__button" onClick={removeFromBasket}>
-                <Bin className="cart__icon" />
-                Remove{" "}
-              </button>
+                <Bin className="cart__removeBtn" onClick={removeFromBasket} />
             </div>
           </div>
         </div>
@@ -58,7 +54,6 @@ function CheckoutProduct({ id, name, description, image, price, quantity }) {
           {+price * +quantity}
         </span>
       </div>
-    </div>
   );
 }
 
