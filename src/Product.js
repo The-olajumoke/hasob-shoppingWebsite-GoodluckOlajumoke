@@ -1,21 +1,21 @@
-import card from "./productPics/card.JPG"
-import cat from "./productPics/cat.JPG"
-import jugs from "./productPics/jugs.JPG"
-import makeupBrush from "./productPics/makeupBrush.JPG"
-import nailPolish from "./productPics/nailPolish.JPG"
-import plant from "./productPics/plant.JPG"
-import shorts from "./productPics/shorts.JPG"
-import stationary from "./productPics/stationary.JPG"
-import syrup from "./productPics/syrup.JPG"
-import typewriter from "./productPics/typewriter.JPG"
-import vase from "./productPics/vase.JPG"
+import card from "./productPics/card.JPG";
+import cat from "./productPics/cat.JPG";
+import jugs from "./productPics/jugs.JPG";
+import makeupBrush from "./productPics/makeupBrush.JPG";
+import nailPolish from "./productPics/nailPolish.JPG";
+import plant from "./productPics/plant.JPG";
+import shorts from "./productPics/shorts.JPG";
+import stationary from "./productPics/stationary.JPG";
+import syrup from "./productPics/syrup.JPG";
+import typewriter from "./productPics/typewriter.JPG";
+import vase from "./productPics/vase.JPG";
 
 const Products = [
   {
     id: 1,
     image: card,
-    name: "Lorem",
-    description: "Necessitatibus perferendis voluptas error voluptate",
+    name: "Writing Pad",
+    description: "Analogue writing note pad suitable",
     price: 17.5,
     brand: "Lee Pucker",
     shipping: "ipsum dolor sit amet consectetur adipisicing",
@@ -168,4 +168,4 @@ const Products = [
     subTotal: 0,
   },
 ];
-export default Products
+export default Products;

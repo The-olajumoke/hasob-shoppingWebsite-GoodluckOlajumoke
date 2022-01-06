@@ -21,39 +21,40 @@ function CheckoutProduct({ id, name, description, image, price, quantity }) {
   };
 
   return (
-      <div className="border">
-        <div className=" ">
-          <img className="cart-item-image" src={image} alt="" />
-          <div className="cart-item-title">
-            <h4>
-              {" "}
-              <strong>{name}</strong>
-            </h4>
-            <p>{description}</p>
-            <div className="cart__btnCont my-2 justify-content-between w-100 ">
-              <button className="cart__button">
-                <Love className="cart__icon" />
-                Save Item{" "}
-              </button>
+    <div className="cart-main-cont">
+      <div className="cart-details">
+        <img className="cart-item-image" src={image} alt="" />
+        <div className="cart-item-title">
+          <h4 className="cart-title">{name}</h4>
+          <p className="cart-desc">{description}</p>
+          <div className="cart__btnCont ">
+            <button className="cart-button ">
+              <Love className="cart__icon mr-2" />
+              Save Item
+            </button>
 
-                <Bin className="cart__removeBtn" onClick={removeFromBasket} />
-            </div>
+            <button
+              className="cart-button cart_removeBtn"
+              onClick={removeFromBasket}
+            >
+              <Bin />
+              Remove Item
+            </button>
           </div>
         </div>
         <input
           type="number"
-          className="cart-header cart-column others"
+          className=" cart-input"
           value={quantity}
           onChange={handleChange}
           min="1"
           max="5"
         />
-        <span className="cart-header cart-column others">{price}</span>
+        <span className="cart-price">{price}</span>
 
-        <span className="cart-header cart-column others">
-          {+price * +quantity}
-        </span>
+        <span className="cart-price">{+price * +quantity}</span>
       </div>
+    </div>
   );
 }
 

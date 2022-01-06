@@ -44,7 +44,7 @@ const Item = ({
     <div key={id} className="product">
       <div className="p-2">
         <Link to={{ pathname: `/about/${id}` }}>
-          <div className="d-flex justify-content-center" >
+          <div className="d-flex justify-content-center">
             <img className="product__img" src={image} alt="" />
           </div>
         </Link>
